@@ -153,6 +153,7 @@ ________________________
     border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .item {
@@ -162,6 +163,9 @@ ________________________
 
 .item1{
     background-color: rgb(255, 190, 225);
+    position:absolute;
+    top:50px;
+    left: 50px;
 }
 
 .item2{
@@ -178,6 +182,15 @@ ________________________
     margin: 10px;
     width: 70%;
 }
+
+.box__vw {
+    width: 50vw;
+    }
+    .box__vh {
+    height: 20vh;
+    }
+
+
 .box {
     border: 1px solid var(--grey-900);
     height: auto;
@@ -189,8 +202,16 @@ ________________________
     height: auto;
     margin: 10px;
     font-size: 25px;
-}
-
+    }
+    .font__1em {
+    font-size: 1em;
+    }
+    .font__1rem {
+    font-size: 1rem;
+    }
+    .font__100percent {
+    font-size: 100%;
+    }
 
 /*
 ________________________
@@ -208,15 +229,26 @@ ________________________
 Media Queries
 ________________________
 */
+
 .media__container{
     height: 20vh;
     width: 90vw;
     margin-bottom: 50px;
     background-color: var(--primary-100);
 }
+
 /* Extra small devices (phones, 600px and down) */
 
+@media screen and (max-width:600px)
+{
+    .media__container{
+        height: 20vh;
+        width: 90vw;
+        margin-bottom: 50px;
+        background-color: var(--primary-200);
+    }
 
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
